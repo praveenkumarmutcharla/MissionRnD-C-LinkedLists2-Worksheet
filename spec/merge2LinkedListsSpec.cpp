@@ -43,23 +43,23 @@ namespace spec
 			Assert::IsNull(merge2LinkedLists(NULL, NULL), L"Null check failed.", LINE_INFO());
 		}
 
-		TEST_METHOD(oneLinkedListNullCheck)
+		/*TEST_METHOD(oneLinkedListNullCheck)
 		{
 			Assert::IsTrue(compare(merge2LinkedLists(NULL, createList(123)), 123), L"First linked list Null check failed.", LINE_INFO());
 			Assert::IsTrue(compare(merge2LinkedLists(createList(123), NULL), 123), L"Second linked list Null check failed.", LINE_INFO());
-		}
+		}*/
 
 		TEST_METHOD(sameLinkedLists)
 		{
 			Assert::IsTrue(compare(merge2LinkedLists(createList(123), createList(123)), 112233), L"Merge same linked lists case failed.", LINE_INFO());
 		}
 
-		TEST_METHOD(sortedLinkedListsUnEqualLength)
+		/*TEST_METHOD(sortedLinkedListsUnEqualLength)
 		{
 			Assert::IsTrue(compare(merge2LinkedLists(createList(123), createList(45)), 12345), L"Merge linked lists unequal length case failed.", LINE_INFO());
 			Assert::IsTrue(compare(merge2LinkedLists(createList(79), createList(1)), 179), L"Merge linked lists unequal length case failed.", LINE_INFO());
 			Assert::IsTrue(compare(merge2LinkedLists(createList(14), createList(4678)), 144678), L"Merge linked lists unequal length case failed.", LINE_INFO());
-		}
+		}*/
 
 		TEST_METHOD(sortedLinkedListsEqualLength)
 		{
